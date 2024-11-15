@@ -42,12 +42,28 @@ const StatePage = () => {
 
     const [selected, setSelected] = useState(0);
 
+    const [text, setText] = useState('');
+
+    const handleChange = (e) => {
+        setText(e.target.value);
+        console.log(e.target.value);
+    };
+
     return (
-        <div>
-            {/* 에어비앤비 */}
+        <div className='py-20 flex flex-col items-center gap-10'>
             <div>
-                {/* tab */}
-                <div className='flex gap-3'>
+                <input
+                    type='text'
+                    placeholder='안녕하세요.'
+                    value={text}
+                    onChange={handleChange}
+                    className='bg-pink-200'
+                />
+                <p>{text}</p>
+            </div>
+
+            <div>
+                <div className='flex gap-3 justify-center'>
                     {sortArr.map((item, index) => (
                         <button
                             key={index}
