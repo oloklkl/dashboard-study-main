@@ -8,6 +8,7 @@ import { stateData } from '@/data/stateData';
 import Button from '@/components/button/Button';
 import CheckTable from './components/CheckTable';
 import { tableDataCheck } from '@/data/tableDataCheck';
+import OrderCoffee from '../class/page';
 
 const HomePage = () => {
     return (
@@ -15,6 +16,8 @@ const HomePage = () => {
             <Header />
 
             <main className='inner flex flex-col gap-10'>
+                <OrderCoffee name='아메리카노' price={3500} />
+
                 <div className='flex gap-4'>
                     <Button>확인</Button>
                     <Button gray>취소</Button>
