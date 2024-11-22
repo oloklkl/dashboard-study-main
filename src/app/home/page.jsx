@@ -6,8 +6,6 @@ import Header from '@/components/layout/Header';
 import MiniStateGrid from './components/MiniStateGrid';
 import { stateData } from '@/data/stateData';
 import Button from '@/components/button/Button';
-import CheckTable from './components/CheckTable';
-import { tableDataCheck } from '@/data/tableDataCheck';
 import OrderCoffee from '../class/page';
 
 const HomePage = () => {
